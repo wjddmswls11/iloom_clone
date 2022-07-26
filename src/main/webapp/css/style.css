@@ -1,0 +1,19 @@
+@charset "EUC-KR";
+:root {
+	--base-text-color: #333;
+	--base-bg-color: #f1f1f1;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font:16px/1.6 "Noto Sans Kr", sans-serif;
+	color: var(--base-text-color);
+}
+
+ul {
+	list-style: none;
+}
