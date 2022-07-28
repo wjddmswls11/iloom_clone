@@ -103,15 +103,41 @@ header {
 
 .desc {
 	margin: 1em 0;
-	font-size: .720em;
+	font-size: .875em;
 }
 
 
 
 .price {
 	color: #ff4040;
-	font-size: .875em;
+	font-size: .720em;
 }
 
-
+/*===================promotion=========================*/
+ 
+ .promotion {
+ 	max-width: 1280px;
+ 	margin: 2em auto;
+ 	overflow: hidden;
+ }
+ .event-banner {
+ 	margin-bottom: 1em;
+ }
+ .promotion-list {
+ 	display: flex;
+ 	column-gap: 1em;
+ }
+ 
+ .promotion-list img {
+ 	object-fit: cover;
+ 	max-width: 100%;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
