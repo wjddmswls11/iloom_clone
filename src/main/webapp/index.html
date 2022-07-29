@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link rel="icon" href="favicon.ico" />
+<link rel="icon" href="images/favicon.ico" />
 <title>일룸 clone</title>
 <!-- bxslider installation. step1 -->
 <!-- jQuery library (served from Google) -->
@@ -448,10 +448,10 @@
 	</div>
 	<script>$(document).ready(function(){
   			$('#imgs').bxSlider({
-  				mode: 'fade',
-  				auto: true,
-  				pause: 4000,
-  				pager: false
+  				mode: 'fade', 	// 가로, 세로, 페이드 모드
+  				auto: true,		// 자동실행
+  				pause: 4000,	// 캐러셀 변경 타이밍 : 4초마다
+  				pager: true,	// (하단)페이저 감춤
   			});
 			});
 	</script>
