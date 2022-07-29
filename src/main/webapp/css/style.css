@@ -49,7 +49,7 @@ header {
 	position: fixed;
 	left: 0;
 	top: 0;
-	width: 100vw; /* 100%�� ���� ����, ������ 100���� ������ ���� */
+	width: 100vw; /* 100%와 같은 비율, 공간을 100개로 조각낸 비율 */
 	z-index: 10000;
 	background: white;
 }
@@ -173,5 +173,120 @@ header {
  
  
  }
+ .special-list {
+ 	max-width: 1280px;
+ 	margin: 100px auto 50px;
+ 	display: grid;
+ 	grid-template-columns: repeat(4,1fr); 		/*fraction: 전체 공간의 합을 비율로 표현*/
+	column-gap: 1rem;
+ }
  
  
+  .special-list img {
+  	max-width: 100%
+  }
+  
+  .attach-img {
+  border-radius: 20px;
+  overflow: hidden;
+  }
+  
+  .attach-img {
+  	height: 300px;
+  	border-radius: 20px;
+  	overflow: hidden;
+  }
+  
+  
+  .rank-point {
+  	color: #b00000;
+  	font-size: 1.250em;
+  	letter-spacing: 3px;
+  	margin : .5em 0;  /*em : 엠~ , rem : 램 알엠*/
+  	
+  }
+  
+  .write-title {
+  	font-size: 1.250em;
+  	font-weight: 800; 	/* 100~900 (단위 없음), thin/bold/bolder*/
+  }
+  
+  .write-body {
+  	font-size: .875em;
+  	text-overflow: ellipsis; /* 넘치면, 단축하기? ...처리! */
+  	overflow: hidden;
+   	word-break: break-word;
+
+   	display: -webkit-box; 	/* vender prefix : 표준 속성이 아닐때, 다른 브라우저가 지원할 수 있는 접두어*/
+   	-webkit-line-clamp: 2; 	/* 원하는 라인수 */
+   	-webkit-box-orient: vertical;
+  }
+  
+  .relate-item {
+  	display: flex;
+  	justify-content: space-between;
+  }
+  /*.relate-item::before {
+  	content: '';
+  	border-top: 1px dashed red;
+  	width: 100%;
+  
+  }*/
+  
+  .item-image {
+  	border-radius: 50%;
+  	width: 100px;
+  	height: 100px;
+  	overflow: hidden;
+  }
+  
+  .like-item::after {
+  	content: '';
+  	color: red;
+  	display: inline-block; 
+  	background: url("../images/icn_likeHrt.svg");
+  }
+  
+  .item-title {
+  	text-overflow: ellipsis;
+  	white-space: nowrap;
+  	width: 5em;
+  	overflow: hidden;
+  	font-weight: bold;
+  }	
+  
+  .item-location, .item-price {
+  	font-size: .725em;
+  	color: gray;
+  }	
+  	/*================== aside =======================*/
+  aside {
+  	background: #e0e0e0;
+  	}
+  
+  .sns{
+  	max-width: 1280px;
+  	margin: 0 auto;
+  }
+  
+  .sns p {
+  	text-align: center;
+  }
+  
+  .sns p:nth-child(1) {
+  	font-size: 1.750em;
+  	text-transform: uppercase;
+  	margin: 1em 0;
+  }
+  .sns p:nth-child(2) {
+  	font-size: 1.250em;
+  	
+  }
+  
+  .sns-posts {
+  	display: flex;
+  
+  }
+  
+  
+  
