@@ -97,7 +97,7 @@ header {
 }
 
 .reco-list img {
-	object-fit: 213px;
+	width: 213px;
 }
 
 .desc {
