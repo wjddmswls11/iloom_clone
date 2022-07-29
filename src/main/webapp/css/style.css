@@ -244,6 +244,8 @@ header {
   	content: '';
   	color: red;
   	display: inline-block; 
+  	width: 16px;
+	height: 16px;
   	background: url("../images/icn_likeHrt.svg");
   }
   
@@ -288,5 +290,8 @@ header {
   
   }
   
+  .sns-posts img {
+	width: 200px;
+}
   
   
