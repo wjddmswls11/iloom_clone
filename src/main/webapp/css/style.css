@@ -49,7 +49,7 @@ header {
 	position: fixed;
 	left: 0;
 	top: 0;
-	width: 100vw; /* 100%와 같은 비율, 공간을 100개로 조각낸 비율 */
+	width: 100vw; /* 100%�� 媛��� 鍮���, 怨듦��� 100媛�濡� 議곌��� 鍮��� */
 	z-index: 10000;
 	background: white;
 }
@@ -177,7 +177,7 @@ header {
  	max-width: 1280px;
  	margin: 100px auto 50px;
  	display: grid;
- 	grid-template-columns: repeat(4,1fr); 		/*fraction: 전체 공간의 합을 비율로 표현*/
+ 	grid-template-columns: repeat(4,1fr); 		/*fraction: ��泥� 怨듦��� �⑹�� 鍮��⑤� ����*/
 	column-gap: 1rem;
  }
  
@@ -202,23 +202,23 @@ header {
   	color: #b00000;
   	font-size: 1.250em;
   	letter-spacing: 3px;
-  	margin : .5em 0;  /*em : 엠~ , rem : 램 알엠*/
+  	margin : .5em 0;  /*em : ��~ , rem : �� ����*/
   	
   }
   
   .write-title {
   	font-size: 1.250em;
-  	font-weight: 800; 	/* 100~900 (단위 없음), thin/bold/bolder*/
+  	font-weight: 800; 	/* 100~900 (�⑥�� ����), thin/bold/bolder*/
   }
   
   .write-body {
   	font-size: .875em;
-  	text-overflow: ellipsis; /* 넘치면, 단축하기? ...처리! */
+  	text-overflow: ellipsis; /* ��移�硫�, �⑥���湲�? ...泥�由�! */
   	overflow: hidden;
    	word-break: break-word;
 
-   	display: -webkit-box; 	/* vender prefix : 표준 속성이 아닐때, 다른 브라우저가 지원할 수 있는 접두어*/
-   	-webkit-line-clamp: 2; 	/* 원하는 라인수 */
+   	display: -webkit-box; 	/* vender prefix : ��以� ���깆�� ������, �ㅻⅨ 釉��쇱�곗��媛� 吏����� �� ���� ������*/
+   	-webkit-line-clamp: 2; 	/* ������ �쇱�몄�� */
    	-webkit-box-orient: vertical;
   }
   
@@ -262,13 +262,12 @@ header {
   	color: gray;
   }	
   	/*================== aside =======================*/
-  aside {
-  	background: #e0e0e0;
-  	}
+
   
   .sns{
   	max-width: 1280px;
   	margin: 0 auto;
+  	background: #e0e0e0;
   }
   
   .sns p {
@@ -291,7 +290,202 @@ header {
   }
   
   .sns-posts img {
-	width: 200px;
+	width: 280px;
+	max-width: 100%
 }
+  
+  .sns-wrap img {
+  	height: 280px;
+  	overflow: hidden;
+  	border-style: none;
+  }
+  
+  .quick-menu {
+  	max-width: 1280px;
+  	margin: 0 auto;
+  }
+  
+  .quick-title {
+  	text-align: center;
+  	font-size: 1.750em;
+  	text-transform: uppercase;
+  	margin: 1em 0;
+  }
+  
+  .quick-list {
+	display: flex;
+	justify-content:space-between;
+	max-width: 800px;
+	margin: 0px auto;
+	overflow: hidden;
+	text-align: center;
+	font-size: 0px;
+}
+  
+  .quick-wrap > div:hover .overlay{
+	opacity: 1;
+	/*animation: apper .8s ease-in-out;	/* transition : 트랜지션 (처음-끝 css 값을 결정하면 중간 css 상태를 자동으로 작성)*/
+}
+  .overlay {
+	opacity: 0;
+	transition: opacity .4s cubic-bezier(.12,.9,.87,.09); /* css 속성의 차이를 자동으로 (중간과정을) 생성하는 일종의 애니메이션 */
+	position: absolute;	
+}
+
+  .some-title{
+  	font-size: 15px;
+  	padding: 30px;
+  	line-height: 140%;
+  	padding-top: 24px;
+  	display: inline-block;
+  }
+  
+  .notice {
+  	display: block;
+    width: 800px;
+    text-align: center;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+
+  .notice-title{
+  	font-size: 1.750em;
+  	text-transform: uppercase;
+  	margin: 1em 0; 
+  }
+  
+  .notice-list{
+  	display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+	}
+  
+  
+  .notice-list li{
+  	display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -1.44px;
+  }
+  
+  .notice-more {
+  	width: 240px;
+    height: 50px;
+    border: 1px solid #aaa;
+    margin-top: 60px;
+    color: #333333;
+    background-color: #fff;
+    font-weight: 300;
+  }
+  
+  /*==============================footer========================*/
+  
+   footer {
+  	background: #e0e0e0;
+  	width: 100%;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f0f0f0;
+    border: none;
+    margin-top: 120px;
+    margin: 0 0 10px 0;
+    z-index: 10;
+    width: fit-content;
+  	
+  	}
+  
+  .footer-wrap {
+  	width: 1200px;
+    padding: 55px 20px 20px;
+    margin: 0px auto;
+  }
+  
+  .site {
+  overflow: hidden;
+  }
+  
+  .site-nav {
+  	width: 240px;
+    margin-right: 0px;
+    float: left;
+  }
+  
+  .site-links{
+  	float: left;
+    margin-right: 120px;
+  }
+  
+   .snb-c{
+   	float: left;
+    margin-right: 120px;
+   }
+ 
+  
+  
+  .snb-a {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+  
+  }
+  
+  .snb-b {
+  	margin-bottom: 14px;
+  	font-size: 12px;
+  }
+  
+  .site-info{
+  	display: flex;
+    width: 330px;
+  }
+  
+  .info-title{
+	font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .info-list{
+  	    width: 220px;
+  
+  
+  }
+  .info-btn{
+    position: relative;
+    display: inline-block;
+    padding: 8px 12px 8px 36px;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 2px;
+    border: solid 1px #aaa;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+  	padding: 5px 36px 5px 16px;
+  	display: inline-block;
+  }
+  
+  
+  .weekday{
+  font-size: 13px;
+  }
+  .weekend{
+  font-size: 13px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
